@@ -23,7 +23,7 @@
             android:layout_centerInParent="true" />
     </RelativeLayout>
 
-    <!-- 사서 버튼 -->
+
     <Button
         android:id="@+id/btnLibrarianChat"
         android:layout_width="wrap_content"

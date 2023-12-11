@@ -21,6 +21,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".Chatting"></activity>
+        <activity android:name=".StudyGroup"></activity>
+        <activity android:name=".StudyRoom"></activity>
+        <activity android:name=".LibrarianChatActivity"></activity>
+        <activity android:name=".StudyGroupChatActivity"></activity>
+
     </application>
 
 </manifest>
