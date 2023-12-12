@@ -6,47 +6,100 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <TextView
+        android:id="@+id/appTitle"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#7993E1"
+        android:text="Sookmyung Study"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:textSize="12pt"
+        android:gravity="center" />
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
         android:gravity="center"
+        android:layout_centerVertical="true">
+
+        <ImageView
+            android:id="@+id/song1"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_below="@+id/appTitle"
+            android:src="@drawable/nsong1"/>
+
+        <ImageView
+            android:id="@+id/song2"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_toRightOf="@+id/song1"
+            android:layout_below="@+id/appTitle"
+            android:src="@drawable/nsong2" />
+
+        <ImageView
+            android:id="@+id/song3"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_toRightOf="@+id/song2"
+            android:layout_below="@+id/appTitle"
+            android:src="@drawable/nsong3" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
         android:layout_alignParentBottom="true">
 
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background="#D8D8D8" />
 
-        <Button
-            android:id="@+id/btnStudyGroup"
-            android:layout_width="0dp"
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="StudyGroup"
-            android:textStyle="bold"
-            android:textSize="6pt"
-            android:textColor="#000000"
-            android:background="#00FFFFFF"/>
+            android:orientation="horizontal"
+            android:gravity="center" >
+
+            <Button
+                android:id="@+id/btnStudyGroup"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="StudyGroup"
+                android:textStyle="bold"
+                android:textSize="6pt"
+                android:textColor="#000000"
+                android:background="#00FFFFFF"/>
 
 
-        <Button
-            android:id="@+id/btnStudyRoom"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="StudyRoom"
-            android:textStyle="bold"
-            android:textSize="6pt"
-            android:textColor="#000000"
-            android:background="#00FFFFFF"/>
+            <Button
+                android:id="@+id/btnStudyRoom"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="StudyRoom"
+                android:textStyle="bold"
+                android:textSize="6pt"
+                android:textColor="#000000"
+                android:background="#00FFFFFF"/>
 
-        <Button
-            android:id="@+id/btnChatting"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Chatting"
-            android:textStyle="bold"
-            android:textSize="6pt"
-            android:textColor="#000000"
-            android:background="#00FFFFFF"/>
+            <Button
+                android:id="@+id/btnChatting"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Chatting"
+                android:textStyle="bold"
+                android:textSize="6pt"
+                android:textColor="#000000"
+                android:background="#00FFFFFF"/>
+
+        </LinearLayout>
 
     </LinearLayout>
 </RelativeLayout>

@@ -2,15 +2,25 @@ package network.myapplication;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 public class StudyMatching extends AppCompatActivity {
+
+    Button btnStudyGroup, btnStudyRoom, btnChatting;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_study_detail);
+
+        btnStudyGroup = findViewById(R.id.studyGroupB);
+        btnStudyRoom = findViewById(R.id.studyRoomB);
+        btnChatting = findViewById(R.id.chattingB);
 
         Intent intent = getIntent();
         if (intent != null) {
@@ -30,5 +40,27 @@ public class StudyMatching extends AppCompatActivity {
             dateTextView2.setText(selectedDate2);
             timeTextView2.setText(selectedTime2);
         }
+
+        btnStudyGroup.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(StudyMatching.this, StudyCategoryActivity.class);
+                startActivity(intent);
+            }
+        });
+        btnStudyRoom.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(StudyMatching.this, StudyRoomSetActivity.class);
+                startActivity(intent);
+            }
+        });
+        btnChatting.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(StudyMatching.this, Chatting.class);
+                startActivity(intent);
+            }
+        });
     }
 }

@@ -52,7 +52,8 @@ public class Chatting extends AppCompatActivity {
         btnStudyRoom.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                Intent intent = new Intent(Chatting.this, StudyRoomSetActivity.class);
+                startActivity(intent);
             }
         });
 

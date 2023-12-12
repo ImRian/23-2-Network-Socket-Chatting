@@ -18,7 +18,7 @@ import java.util.TimeZone;
 
 public class StudyDateTimeSelectActivity extends AppCompatActivity {
 
-    Button btnTime1, btnTime2, btnDate1, btnDate2, btn_next;
+    Button btnTime1, btnTime2, btnDate1, btnDate2, btn_next, btnStudyGroup, btnStudyRoom, btnChatting;
     ImageButton homeBtn;
     String selectedDate1, selectedDate2, selectedTime1, selectedTime2;
     @Override
@@ -31,6 +31,9 @@ public class StudyDateTimeSelectActivity extends AppCompatActivity {
         btnDate1 = findViewById(R.id.btnDate1);
         btnDate2 = findViewById(R.id.btnDate2);
         btn_next = findViewById(R.id.btn_next);
+        btnStudyGroup = findViewById(R.id.studyGroupBT);
+        btnStudyRoom = findViewById(R.id.studyRoomBT);
+        btnChatting = findViewById(R.id.chattingBT);
         homeBtn = findViewById(R.id.homeBTN);
 
         // 버튼에 클릭 리스너 설정
@@ -65,6 +68,27 @@ public class StudyDateTimeSelectActivity extends AppCompatActivity {
                 sendDataToMatchingActivity();
                 //Intent intent = new Intent(StudyDateTimeSelectActivity.this, StudyMatching.class);
                 //startActivity(intent);
+            }
+        });
+        btnStudyGroup.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(StudyDateTimeSelectActivity.this, StudyCategoryActivity.class);
+                startActivity(intent);
+            }
+        });
+        btnStudyRoom.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(StudyDateTimeSelectActivity.this, StudyRoomSetActivity.class);
+                startActivity(intent);
+            }
+        });
+        btnChatting.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(StudyDateTimeSelectActivity.this, Chatting.class);
+                startActivity(intent);
             }
         });
         homeBtn.setOnClickListener(new View.OnClickListener() {
