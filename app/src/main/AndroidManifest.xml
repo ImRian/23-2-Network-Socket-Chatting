@@ -13,6 +13,18 @@
         android:theme="@style/Theme.StudyGroup"
         tools:targetApi="31">
         <activity
+            android:name=".ChatGroupActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ChatEnterActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ClientManagerThread"
+            android:exported="true" />
+        <activity
+            android:name=".MyServer"
+            android:exported="true" />
+        <activity
             android:name=".StudyMatching"
             android:exported="true" />
         <activity
@@ -34,7 +46,6 @@
         <activity android:name=".StudyGroup" />
         <activity android:name=".StudyRoom" />
         <activity android:name=".LibrarianChatActivity" />
-        <activity android:name=".StudyGroupChatActivity" />
     </application>
-
+    <uses-permission android:name="android.permission.INTERNET" />
 </manifest>
