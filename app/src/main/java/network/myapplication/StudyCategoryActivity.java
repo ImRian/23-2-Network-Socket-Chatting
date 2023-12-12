@@ -70,7 +70,7 @@ public class StudyCategoryActivity extends AppCompatActivity {
         btnStudyRoom.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(StudyCategoryActivity.this, StudyRoom.class);
+                Intent intent = new Intent(StudyCategoryActivity.this, StudyRoomSetActivity.class);
                 startActivity(intent);
             }
         });
