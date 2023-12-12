@@ -7,10 +7,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#FFFFFF"
-    tools:context=".Chatting">
+    tools:context=".StudyDateTimeSelectActivity">
 
     <RelativeLayout
-        android:id="@+id/chattingTitleBar"
+        android:id="@+id/studyCategoryTitleBar"
         android:layout_width="match_parent"
         android:layout_height="48dp"
         android:background="#7993E1"
@@ -21,14 +21,14 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Chatting"
-            android:textSize="12pt"
+            android:layout_centerInParent="true"
+            android:text="Study Group"
             android:textColor="#FFFFFF"
-            android:textStyle="bold"
-            android:layout_centerInParent="true" />
+            android:textSize="12pt"
+            android:textStyle="bold" />
 
         <ImageButton
-            android:id="@+id/chatHomeBTN1"
+            android:id="@+id/homeBTN"
             android:layout_width="40sp"
             android:layout_height="40sp"
             android:layout_alignParentEnd="true"
@@ -42,9 +42,8 @@
             android:src="@drawable/home"
             tools:src="@drawable/home" />
     </RelativeLayout>
-
     <RelativeLayout
-        android:id="@+id/chattingSubTitleBar"
+        android:id="@+id/studyCategorySubTitleBar"
         android:layout_width="match_parent"
         android:layout_height="48dp"
         android:background="#FFFFFF"
@@ -55,14 +54,43 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="채팅방"
-            android:textSize="10pt"
+            android:layout_centerInParent="true"
+            android:paddingLeft="15dp"
+            android:text="스터디 세부 설정"
             android:textColor="#000000"
-            android:textStyle="bold"
-            android:layout_centerVertical="true"
-            android:paddingLeft="15dp"/>
+            android:textSize="10pt"
+            android:textStyle="bold" />
     </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="#D8D8D8" />
 
+    <CalendarView
+        android:id="@+id/calendarView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10sp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="현재 시간 : "
+            android:textSize="17sp" />
+
+        <TextClock
+            android:id="@+id/textClock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="17sp" />
+    </LinearLayout>
     <View
         android:layout_width="match_parent"
         android:layout_height="3dp"
@@ -71,92 +99,71 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
-
-        <ImageView
-            android:id="@+id/findChatImageView"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:padding="5dp"
-            android:src="@drawable/search" />
-
-        <EditText
-            android:id="@+id/findChatBTN"
+        android:gravity="center"
+        android:layout_weight="1"
+        android:orientation="vertical">
+        <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:ems="15"
-            android:inputType="text"
-            android:text="채팅방을 검색하세요" />
+            android:textSize="17sp"
+            android:text="스터디룸 예약 시작시간" />
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
 
+            <Button
+                android:id="@+id/btnDate1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onClick3"
+                android:text="날짜 정하기" />
+
+            <Button
+                android:id="@+id/btnTime1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onclick3"
+                android:text="시간 정하기" />
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="17sp"
+            android:text="스터디룸 예약 종료시간" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnDate2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onClick3"
+                android:text="날짜 정하기" />
+
+            <Button
+                android:id="@+id/btnTime2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onclick3"
+                android:text="시간 정하기" />
+        </LinearLayout>
     </LinearLayout>
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="8"
-        android:orientation="vertical">
-
-        <Button
-            android:id="@+id/libChatBtn"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:backgroundTint="#FFFFFF"
-            android:gravity="left"
-            android:text="사서                                           >"
-            android:textColor="#000000"
-            android:textSize="11pt"
-            android:textStyle="bold" />
-
-        <Button
-            android:id="@+id/networkChatBtn"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:backgroundTint="#FFFFFF"
-            android:gravity="left"
-            android:text="네트워크 스터디                        >"
-            android:textColor="#000000"
-            android:textSize="11pt"
-            android:textStyle="bold" />
-
-        <Button
-            android:id="@+id/bookClubChatBtn"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:backgroundTint="#FFFFFF"
-            android:gravity="left"
-            android:text="독서 클럽                                   >"
-            android:textColor="#000000"
-            android:textSize="11pt"
-            android:textStyle="bold" />
-    </LinearLayout>
-
-    <LinearLayout
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_next"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
-
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="3dp"
-            android:background="#D8D8D8" />
-
-        <Button
-            android:id="@+id/openChatBtn"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:backgroundTint="#FFFFFF"
-            android:text="+ 오픈채팅 참여"
-            android:textColor="#000000"
-            android:textSize="9pt"
-            android:textStyle="bold" />
-
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="3dp"
-            android:background="#D8D8D8" />
-    </LinearLayout>
+        android:background="#81BEF7"
+        android:textSize="17sp"
+        android:text="예약 확정하기" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -164,7 +171,7 @@
         android:orientation="horizontal">
 
         <Button
-            android:id="@+id/chat2studyGroupBTN1"
+            android:id="@+id/studyGroupBT"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
@@ -175,7 +182,7 @@
             android:textStyle="bold" />
 
         <Button
-            android:id="@+id/chat2studyRoomBTN1"
+            android:id="@+id/studyRoomBT"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
@@ -186,7 +193,7 @@
             android:textStyle="bold" />
 
         <Button
-            android:id="@+id/chat2chatBTN1"
+            android:id="@+id/chattingBT"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
@@ -195,7 +202,7 @@
             android:textColor="#000000"
             android:textSize="7pt"
             android:textStyle="bold" />
-    </LinearLayout>
 
+    </LinearLayout>
 
 </LinearLayout>

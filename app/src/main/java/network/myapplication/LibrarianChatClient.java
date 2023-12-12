@@ -32,7 +32,7 @@ public class LibrarianChatClient extends AppCompatActivity {
         buttonSend = findViewById(R.id.buttonSend);
         textViewMessages = findViewById(R.id.textViewMessages);
 
-        new ConnectTask().execute("172.20.19.64", "5006");
+        new ConnectTask().execute("172.20.19.64", "1912");
 
         buttonSend.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -48,7 +48,7 @@ public class LibrarianChatClient extends AppCompatActivity {
             @Override
             public void run() {
                 if (writer != null) {
-                    writer.println(message); // "Client: " 접두사 제거
+                    writer.println(message);
                     Log.d("ChatClient", "Message sent: " + message);
 
                     runOnUiThread(new Runnable() {

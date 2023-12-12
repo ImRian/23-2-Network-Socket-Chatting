@@ -9,6 +9,7 @@
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
 
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -20,7 +21,36 @@
         android:theme="@style/Theme.StudyGroup"
         tools:targetApi="31">
 
+
         <!-- MainActivity가 앱의 시작점임을 명시 -->
+        <activity
+            android:name=".BookClubChatClient"
+            android:exported="false" />
+        <activity
+            android:name=".StudyRoomSetActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ChatGroupActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ChatEnterActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ClientManagerThread"
+            android:exported="true" />
+        <activity
+            android:name=".MyServer"
+            android:exported="true" />
+        <activity
+            android:name=".StudyMatching"
+            android:exported="true" />
+        <activity
+            android:name=".StudyDateTimeSelectActivity"
+            android:exported="false" />
+        <activity
+            android:name=".StudyCategoryActivity"
+            android:exported="false" />
+
         <activity
             android:name=".MainActivity"
             android:exported="true">
@@ -29,21 +59,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-        <!-- 기타 필요한 액티비티들을 선언 -->
-        <activity
-            android:name=".StudyCategoryActivity"
-            android:exported="true" />
-        <activity android:name=".StudyGroup" android:exported="true"/>
-        <activity android:name=".StudyRoom" android:exported="true"/>
         <activity android:name=".StudyGroupChatActivity" android:exported="true"/>
         <activity android:name=".ChatClientTask" android:exported="true"/>
         <activity android:name=".Chatting" android:exported="true"/>
-
-        <activity
-            android:name=".LibrarianChatClient"
-            android:exported="true">
-        </activity>
+        <activity android:name=".LibrarianChatClient" android:exported="true"/>
 
     </application>
 </manifest>
