@@ -30,28 +30,32 @@ public class StudyCategoryActivity extends AppCompatActivity {
         btnJavaStudy.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                Intent intent = new Intent(StudyCategoryActivity.this, StudyDateTimeSelectActivity.class);
+                startActivity(intent);
             }
         });
 
         btnJsStudy.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                Intent intent = new Intent(StudyCategoryActivity.this, StudyDateTimeSelectActivity.class);
+                startActivity(intent);
             }
         });
 
         btnCStudy.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                Intent intent = new Intent(StudyCategoryActivity.this, StudyDateTimeSelectActivity.class);
+                startActivity(intent);
             }
         });
 
         btnNetworkStudy.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                Intent intent = new Intent(StudyCategoryActivity.this, StudyDateTimeSelectActivity.class);
+                startActivity(intent);
             }
         });
 
@@ -66,7 +70,8 @@ public class StudyCategoryActivity extends AppCompatActivity {
         btnStudyRoom.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                Intent intent = new Intent(StudyCategoryActivity.this, StudyRoom.class);
+                startActivity(intent);
             }
         });
 
