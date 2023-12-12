@@ -6,10 +6,12 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 
 public class StudyCategoryActivity extends AppCompatActivity {
 
     private Button btnJavaStudy, btnJsStudy, btnCStudy, btnNetworkStudy, btnStudyGroup, btnStudyRoom, btnChatting;
+    private ImageButton btnHome;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,6 +25,7 @@ public class StudyCategoryActivity extends AppCompatActivity {
         btnStudyGroup = findViewById(R.id.studyGroupBTN);
         btnStudyRoom = findViewById(R.id.studyRoomBTN);
         btnChatting = findViewById(R.id.chattingBTN);
+        btnHome = findViewById(R.id.homeBTN);
 
         btnJavaStudy.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -71,6 +74,14 @@ public class StudyCategoryActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(StudyCategoryActivity.this, Chatting.class);
+                startActivity(intent);
+            }
+        });
+
+        btnHome.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(StudyCategoryActivity.this, MainActivity.class);
                 startActivity(intent);
             }
         });
