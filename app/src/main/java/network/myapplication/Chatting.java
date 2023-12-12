@@ -21,10 +21,11 @@ public class Chatting extends AppCompatActivity {
         btnLibrarianChat.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Chatting.this, LibrarianChatActivity.class);
+                Intent intent = new Intent(Chatting.this, LibrarianChatClient.class);
                 startActivity(intent);
             }
         });
+
 
         btnStudyGroupChat.setOnClickListener(new View.OnClickListener() {
             @Override

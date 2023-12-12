@@ -2,6 +2,13 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <!-- 필요한 권한들을 선언 -->
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -12,23 +19,31 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.StudyGroup"
         tools:targetApi="31">
-        <activity
-            android:name=".StudyCategoryActivity"
-            android:exported="false" />
+
+        <!-- MainActivity가 앱의 시작점임을 명시 -->
         <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Chatting" />
-        <activity android:name=".StudyGroup" />
-        <activity android:name=".StudyRoom" />
-        <activity android:name=".LibrarianChatActivity" />
-        <activity android:name=".StudyGroupChatActivity" />
-    </application>
 
+        <!-- 기타 필요한 액티비티들을 선언 -->
+        <activity
+            android:name=".StudyCategoryActivity"
+            android:exported="true" />
+        <activity android:name=".StudyGroup" android:exported="true"/>
+        <activity android:name=".StudyRoom" android:exported="true"/>
+        <activity android:name=".StudyGroupChatActivity" android:exported="true"/>
+        <activity android:name=".ChatClientTask" android:exported="true"/>
+        <activity android:name=".Chatting" android:exported="true"/>
+
+        <activity
+            android:name=".LibrarianChatClient"
+            android:exported="true">
+        </activity>
+
+    </application>
 </manifest>
