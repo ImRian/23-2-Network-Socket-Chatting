@@ -118,6 +118,17 @@
             android:textColor="#000000"
             android:textSize="11pt"
             android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/bookClubChatBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#FFFFFF"
+            android:gravity="left"
+            android:text="독서 클럽                                   >"
+            android:textColor="#000000"
+            android:textSize="11pt"
+            android:textStyle="bold" />
     </LinearLayout>
 
     <LinearLayout

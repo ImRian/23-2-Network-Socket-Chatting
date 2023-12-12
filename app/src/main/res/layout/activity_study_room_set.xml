@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".StudyRoomSetActivity">
 
 
     <EditText
@@ -62,7 +62,7 @@
             android:layout_weight="1"
             android:text="StudyGroup"
             android:textStyle="bold"
-            android:textSize="16sp"
+            android:textSize="6pt"
             android:textColor="#000000"
             android:background="#00FFFFFF"/>
 
@@ -74,7 +74,7 @@
             android:layout_weight="1"
             android:text="StudyRoom"
             android:textStyle="bold"
-            android:textSize="16sp"
+            android:textSize="6pt"
             android:textColor="#000000"
             android:background="#00FFFFFF"/>
 
@@ -85,7 +85,7 @@
             android:layout_weight="1"
             android:text="Chatting"
             android:textStyle="bold"
-            android:textSize="16sp"
+            android:textSize="6pt"
             android:textColor="#000000"
             android:background="#00FFFFFF"/>
     </LinearLayout>

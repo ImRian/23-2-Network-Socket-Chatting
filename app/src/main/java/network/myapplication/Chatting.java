@@ -10,7 +10,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class Chatting extends AppCompatActivity {
 
-    private Button btnLibrarianChat, btnStudyGroupChat, btnStudyGroup, btnStudyRoom, btnChatting;
+    private Button btnLibrarianChat, btnStudyGroupChat, btnBookClubChat, btnStudyGroup, btnStudyRoom, btnChatting;
     private ImageButton btnHome;
 
     @Override
@@ -20,6 +20,7 @@ public class Chatting extends AppCompatActivity {
 
         btnLibrarianChat = findViewById(R.id.libChatBtn);
         btnStudyGroupChat = findViewById(R.id.networkChatBtn);
+        btnBookClubChat = findViewById(R.id.bookClubChatBtn);
         btnStudyGroup = findViewById(R.id.chat2studyGroupBTN1);
         btnStudyRoom = findViewById(R.id.chat2studyRoomBTN1);
         btnChatting = findViewById(R.id.chat2chatBTN1);
@@ -37,6 +38,14 @@ public class Chatting extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(Chatting.this, ChatEnterActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        btnBookClubChat.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Chatting.this, BookClubChatActivity.class);
                 startActivity(intent);
             }
         });

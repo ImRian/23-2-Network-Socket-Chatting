@@ -6,10 +6,10 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".StudyMatchingActivity">
+    tools:context=".StudyMatching">
 
     <TextView
-        android:id="@+id/studyCategoryTitle"
+        android:id="@+id/studyMatchingTitle"
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:background="#7993E1"
@@ -19,7 +19,7 @@
         android:textSize="11pt" />
 
     <TextView
-        android:id="@+id/studyCategorySubTitle"
+        android:id="@+id/studyMatchingSubTitle"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:background="#FFFFFF"
