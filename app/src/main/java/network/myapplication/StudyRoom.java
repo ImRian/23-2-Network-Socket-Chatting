@@ -1,4 +1,9 @@
 package network.myapplication;
 
-public class StudyRoom {
+import android.os.Bundle;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+public class StudyRoom extends AppCompatActivity {
+
 }

@@ -16,7 +16,8 @@
         android:gravity="center"
         android:text="StudyGroup"
         android:textColor="#FFFFFF"
-        android:textSize="11pt" />
+        android:textSize="11pt"
+        />
 
     <TextView
         android:id="@+id/studyCategorySubTitle"
@@ -48,8 +49,8 @@
             android:textColor="#000000"
             android:textStyle="bold"
             android:textSize="11pt"
-            android:paddingLeft="20dp"
-            android:paddingRight="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="5dp"
             android:paddingTop="20dp"></TextView>
 
         <TextView
@@ -77,22 +78,87 @@
             android:textColor="#000000"
             android:textStyle="bold"
             android:textSize="11pt"
-            android:paddingLeft="20dp"
-            android:paddingRight="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="5dp"
             android:paddingTop="10dp"
             android:paddingBottom="10dp"></TextView>
 
         <TextView
-            android:id="@+id/periodTxt"
+            android:id="@+id/dateTextView1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="2023-11-30~2023-12-31"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:textSize="8pt"
+            android:paddingLeft="10dp"></TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" ~ "
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:textSize="8pt"
+            android:paddingLeft="10dp"></TextView>
+
+        <TextView
+            android:id="@+id/dateTextView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:textSize="8pt"
+            android:paddingLeft="10dp"></TextView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Time: "
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:textSize="11pt"
+            android:paddingLeft="10dp"
+            android:paddingRight="5dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"></TextView>
+
+        <TextView
+            android:id="@+id/timeTextView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:textSize="9pt"
+            android:paddingLeft="10dp"></TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" ~ "
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:textSize="9pt"
+            android:paddingLeft="10dp"></TextView>
+
+        <TextView
+            android:id="@+id/timeTextView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:textColor="#000000"
             android:textStyle="bold"
             android:textSize="9pt"
             android:paddingLeft="10dp"></TextView>
 
     </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="#D8D8D8" />
 
     <TextView
         android:layout_width="match_parent"
@@ -103,7 +169,7 @@
         android:textSize="11pt"
         android:paddingLeft="20dp"
         android:paddingRight="10dp"
-        android:paddingTop="40dp"
+        android:paddingTop="20dp"
         android:paddingBottom="10dp"
         />
 
@@ -185,24 +251,29 @@
             android:paddingBottom="10dp"></TextView>
 
     </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="#D8D8D8" />
 
     <LinearLayout
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="0sp"
+        android:layout_weight='1'
         android:orientation="horizontal">
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="StudyRoom : "
-        android:textColor="#000000"
-        android:textStyle="bold"
-        android:textSize="11pt"
-        android:paddingLeft="20dp"
-        android:paddingRight="10dp"
-        android:paddingTop="40dp"
-        android:paddingBottom="10dp"
-        />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="StudyRoom : "
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:textSize="11pt"
+            android:paddingLeft="20dp"
+            android:paddingRight="10dp"
+            android:paddingTop="20dp"
+            android:paddingBottom="10dp"
+            />
 
         <TextView
             android:id="@+id/studyRoomTxt"
@@ -217,50 +288,6 @@
 
     </LinearLayout>
 
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical">
-
-        <TextView
-            android:id="@+id/studyRoomDay1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="월요일 16시~18시"
-            android:textColor="#000000"
-            android:textStyle="bold"
-            android:textSize="9pt"
-            android:paddingLeft="60dp"
-            android:paddingRight="10dp"
-            android:paddingTop="10dp"
-            android:paddingBottom="10dp"></TextView>
-
-        <TextView
-            android:id="@+id/studyRoomDay2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="수요일 16시~18시"
-            android:textColor="#000000"
-            android:textStyle="bold"
-            android:textSize="9pt"
-            android:paddingLeft="60dp"
-            android:paddingRight="10dp"
-            android:paddingTop="10dp"
-            android:paddingBottom="10dp"></TextView>
-
-
-    </LinearLayout>
-
-
-
-
-
-
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="3dp"
-        android:background="#D8D8D8" />
-
 
 
     <View
@@ -271,42 +298,41 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:orientation="horizontal"
-        >
+        android:layout_weight="0"
+        android:orientation="horizontal">
 
         <Button
             android:id="@+id/studyGroupBTN"
             android:layout_width="wrap_content"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:layout_weight="1"
             android:backgroundTint="#FFFFFF"
             android:text="StudyGroup"
-            android:textStyle="bold"
             android:textColor="#000000"
-            android:textSize="7pt"/>
+            android:textSize="7pt"
+            android:textStyle="bold" />
 
         <Button
             android:id="@+id/studyRoomBTN"
             android:layout_width="wrap_content"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:layout_weight="1"
             android:backgroundTint="#FFFFFF"
             android:text="StudyRoom"
-            android:textStyle="bold"
             android:textColor="#000000"
-            android:textSize="7pt"/>
+            android:textSize="7pt"
+            android:textStyle="bold" />
 
         <Button
             android:id="@+id/chattingBTN"
             android:layout_width="wrap_content"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:layout_weight="1"
             android:backgroundTint="#FFFFFF"
             android:text="Chatting"
-            android:textStyle="bold"
             android:textColor="#000000"
-            android:textSize="7pt"/>
+            android:textSize="7pt"
+            android:textStyle="bold" />
 
     </LinearLayout>
 
