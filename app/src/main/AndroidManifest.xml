@@ -55,7 +55,6 @@
             </intent-filter>
         </activity>
         <activity android:name=".StudyGroupChatActivity" android:exported="true"/>
-        <activity android:name=".ChatClientTask" android:exported="true"/>
         <activity android:name=".Chatting" android:exported="true"/>
         <activity android:name=".LibrarianChatClient" android:exported="true"/>
 
