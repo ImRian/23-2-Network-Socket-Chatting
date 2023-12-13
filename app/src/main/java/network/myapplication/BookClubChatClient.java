@@ -32,7 +32,7 @@ public class BookClubChatClient extends AppCompatActivity {
         buttonSend = findViewById(R.id.buttonSend);
         textViewMessages = findViewById(R.id.textViewMessages);
 
-        new ConnectTask().execute("172.20.19.64", "1912");
+        new ConnectTask().execute("172.20.19.64", "1917");
 
         buttonSend.setOnClickListener(new View.OnClickListener() {
             @Override
