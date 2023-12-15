@@ -11,7 +11,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class StudyMatching extends AppCompatActivity {
 
-    Button btnStudyGroup, btnStudyRoom, btnChatting;
+    ImageButton btnStudyGroup, btnStudyRoom, btnChatting;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
