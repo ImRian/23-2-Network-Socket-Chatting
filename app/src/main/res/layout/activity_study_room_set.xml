@@ -4,6 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:textColor="#000000"
     tools:context=".StudyRoomSetActivity">
 
 
@@ -18,6 +20,7 @@
         android:ems="10"
         android:inputType="text"
         android:text="스터디룸 환경관리"
+        android:textColor="#000000"
         android:textStyle="bold"
         android:paddingLeft="20dp"/>
 
@@ -101,6 +104,7 @@
         android:ems="10"
         android:inputType="text"
         android:text="빔프로젝터 전원"
+        android:textColor="#000000"
         android:paddingLeft="20dp"/>
 
     <EditText
@@ -114,6 +118,7 @@
         android:ems="10"
         android:inputType="text"
         android:text="스터디룸 문 잠금"
+        android:textColor="#000000"
         android:paddingLeft="20dp"/>
 
     <EditText
@@ -127,6 +132,7 @@
         android:ems="10"
         android:inputType="text"
         android:text="조명"
+        android:textColor="#000000"
         android:paddingLeft="20dp"/>
 
     <Switch
@@ -166,6 +172,7 @@
         android:layout_marginBottom="337dp"
         android:autoSizeTextType="uniform"
         android:text="에어컨"
+        android:textColor="#000000"
         android:paddingLeft="20dp" />
 
     <TextView
@@ -177,6 +184,7 @@
         android:layout_marginEnd="155dp"
         android:layout_marginBottom="250dp"
         android:autoSizeTextType="uniform"
+        android:textColor="#000000"
         android:text="22" />
 
     <ImageButton
