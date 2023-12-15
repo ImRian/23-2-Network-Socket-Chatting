@@ -9,7 +9,7 @@ import android.widget.ImageButton;
 
 public class MainActivity extends AppCompatActivity {
 
-    private ImageButton btnStudyGroup, btnStudyRoom, btnChatting;
+    private ImageButton btnStudyGroup, btnStudyRoom, btnChatting, btnAdmin;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,6 +19,7 @@ public class MainActivity extends AppCompatActivity {
         btnStudyGroup = findViewById(R.id.btnStudyGroup);
         btnStudyRoom = findViewById(R.id.btnStudyRoom);
         btnChatting = findViewById(R.id.btnChatting);
+        btnAdmin = findViewById(R.id.btnAdmin);
 
         btnStudyGroup.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -43,6 +44,15 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
 
                 Intent intent = new Intent(MainActivity.this, Chatting.class);
+                startActivity(intent);
+            }
+        });
+
+        btnAdmin.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent intent = new Intent(MainActivity.this, DBConnectActivity.class);
                 startActivity(intent);
             }
         });

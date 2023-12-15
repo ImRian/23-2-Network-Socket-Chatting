@@ -1,3 +1,7 @@
+// 네트워크 스터디 채팅 서버 실행시키는 방법
+// StudyManagerThread.java MyServer.java 동시에 컴파일하고 MyServer을 실행시킵니다.
+// MyServer.java 파일과 ChatGroupActivity.java 의 포트 번호가 동일해야 합니다.
+
 package network.myapplication;
 
 import android.content.Intent;

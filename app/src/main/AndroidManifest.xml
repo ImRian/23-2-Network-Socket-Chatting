@@ -24,6 +24,9 @@
 
         <!-- MainActivity가 앱의 시작점임을 명시 -->
         <activity
+            android:name=".DBConnectActivity"
+            android:exported="false" />
+        <activity
             android:name=".BookClubChatClient"
             android:exported="false" />
         <activity

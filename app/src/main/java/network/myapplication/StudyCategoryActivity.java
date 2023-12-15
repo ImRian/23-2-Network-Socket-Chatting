@@ -11,6 +11,7 @@ import android.widget.ImageButton;
 public class StudyCategoryActivity extends AppCompatActivity {
 
     private Button btnJavaStudy, btnJsStudy, btnCStudy, btnNetworkStudy;
+    private Button btnAddCategory;
     private ImageButton btnHome, btnStudyGroup, btnStudyRoom, btnChatting;
 
     @Override
@@ -26,6 +27,7 @@ public class StudyCategoryActivity extends AppCompatActivity {
         btnStudyRoom = findViewById(R.id.studyRoomBTN);
         btnChatting = findViewById(R.id.chattingBTN);
         btnHome = findViewById(R.id.homeBTN);
+        btnAddCategory = findViewById(R.id.addCategoryBtn);
 
         btnJavaStudy.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -87,6 +89,14 @@ public class StudyCategoryActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(StudyCategoryActivity.this, MainActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        btnAddCategory.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(StudyCategoryActivity.this, DBConnectActivity.class);
                 startActivity(intent);
             }
         });
