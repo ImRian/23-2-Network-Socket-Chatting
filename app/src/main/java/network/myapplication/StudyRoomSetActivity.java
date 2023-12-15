@@ -12,7 +12,7 @@ import android.widget.TextView;
 import java.security.PrivateKey;
 
 public class StudyRoomSetActivity extends AppCompatActivity {
-    Button btnStudyGroup, btnStudyRoom, btnChatting;
+    ImageButton btnStudyGroup, btnStudyRoom, btnChatting;
     ImageButton imageBtnUp, imageBtnDown;
     TextView textViewTemp;
     private String temperature;

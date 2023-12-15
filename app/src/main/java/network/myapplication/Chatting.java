@@ -10,8 +10,8 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class Chatting extends AppCompatActivity {
 
-    private Button btnLibrarianChat, btnStudyGroupChat, btnBookClubChat, btnStudyGroup, btnStudyRoom, btnChatting;
-    private ImageButton btnHome;
+    private Button btnLibrarianChat, btnStudyGroupChat, btnBookClubChat;
+    private ImageButton btnHome, btnStudyGroup, btnStudyRoom, btnChatting;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

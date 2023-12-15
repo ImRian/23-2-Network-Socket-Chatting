@@ -18,8 +18,8 @@ import java.util.TimeZone;
 
 public class StudyDateTimeSelectActivity extends AppCompatActivity {
 
-    Button btnTime1, btnTime2, btnDate1, btnDate2, btn_next, btnStudyGroup, btnStudyRoom, btnChatting;
-    ImageButton homeBtn;
+    Button btnTime1, btnTime2, btnDate1, btnDate2, btn_next;
+    ImageButton homeBtn, btnStudyGroup, btnStudyRoom, btnChatting;
     String selectedDate1, selectedDate2, selectedTime1, selectedTime2;
     @Override
     protected void onCreate(Bundle savedInstanceState) {

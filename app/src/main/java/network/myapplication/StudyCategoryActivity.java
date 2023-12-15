@@ -10,8 +10,8 @@ import android.widget.ImageButton;
 
 public class StudyCategoryActivity extends AppCompatActivity {
 
-    private Button btnJavaStudy, btnJsStudy, btnCStudy, btnNetworkStudy, btnStudyGroup, btnStudyRoom, btnChatting;
-    private ImageButton btnHome;
+    private Button btnJavaStudy, btnJsStudy, btnCStudy, btnNetworkStudy;
+    private ImageButton btnHome, btnStudyGroup, btnStudyRoom, btnChatting;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
